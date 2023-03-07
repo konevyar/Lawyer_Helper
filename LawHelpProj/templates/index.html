@@ -1,0 +1,7 @@
+{% if latest_cases_list %}
+    <ul>
+        {% for case in latest_cases_list %}
+        <li><a href="/detail/{{ case.id }}">{{ case }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
